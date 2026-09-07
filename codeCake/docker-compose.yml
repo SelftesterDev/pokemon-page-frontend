@@ -8,6 +8,8 @@ services:
     image: pokemon-frontend:latest
     ports:
       - "3002:80"
+    environment:
+      - DANGEROUSLY_DISABLE_HOST_CHECK=true
     networks:
       - pokemon-network
     depends_on:
