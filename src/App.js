@@ -4,7 +4,7 @@ import PokemonCard from './components/PokemonCard';
 import FilterBar from './components/FilterBar';
 import LoadingSpinner from './components/LoadingSpinner';
 
-const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://20.51.220.99:3001';
+const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:3001';
 function App() {
   const [pokemons, setPokemons] = useState([]);
   const [filteredPokemons, setFilteredPokemons] = useState([]);
