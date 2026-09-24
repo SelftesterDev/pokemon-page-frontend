@@ -170,3 +170,5 @@ Features included in production:
 - Static asset caching
 - Security headers
 - Client-side routing support
+
+Netlify: **https://pokemonexplorergo.netlify.app/**
