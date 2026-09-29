@@ -7,9 +7,11 @@ services:
       dockerfile: codeCake/Dockerfile
     image: pokemon-frontend:latest
     ports:
+      - "8080:80"
       - "3002:80"
     environment:
       - DANGEROUSLY_DISABLE_HOST_CHECK=true
+      - REACT_APP_API_URL=https://pokemon-page-backend.onrender.com
     networks:
       - pokemon-network
     depends_on:
